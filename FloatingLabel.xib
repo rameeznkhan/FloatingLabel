@@ -8,31 +8,34 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="600" id="F23-aT-3fR" customClass="FloatingLabel" customModule="FloatingLabel" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uny-Sv-Iga">
-                    <rect key="frame" x="0.0" y="14" width="320" height="34"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uny-Sv-Iga">
+                    <rect key="frame" x="0.0" y="10" width="320" height="38"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3E-tE-EEm">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3E-tE-EEm">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="14"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="rXb-zK-OEj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="uny-Sv-Iga" firstAttribute="top" secondItem="Q3E-tE-EEm" secondAttribute="bottom" id="4DK-0A-Aka"/>
+                <constraint firstItem="Q3E-tE-EEm" firstAttribute="top" secondItem="F23-aT-3fR" secondAttribute="top" id="1di-IF-EhU"/>
+                <constraint firstItem="Q3E-tE-EEm" firstAttribute="trailing" secondItem="uny-Sv-Iga" secondAttribute="trailing" id="Fiq-YI-kCN"/>
                 <constraint firstItem="Q3E-tE-EEm" firstAttribute="centerY" secondItem="F23-aT-3fR" secondAttribute="centerY" id="GIj-5d-Hpg"/>
-                <constraint firstItem="Q3E-tE-EEm" firstAttribute="top" secondItem="F23-aT-3fR" secondAttribute="top" id="TL7-Bb-M8w"/>
-                <constraint firstItem="Q3E-tE-EEm" firstAttribute="leading" secondItem="F23-aT-3fR" secondAttribute="leading" id="VGd-Ch-qQn"/>
-                <constraint firstAttribute="trailing" secondItem="Q3E-tE-EEm" secondAttribute="trailing" id="WMz-xn-sy2"/>
-                <constraint firstAttribute="bottom" secondItem="uny-Sv-Iga" secondAttribute="bottom" id="diz-M2-oed"/>
+                <constraint firstItem="Q3E-tE-EEm" firstAttribute="leading" secondItem="uny-Sv-Iga" secondAttribute="leading" id="T37-iN-49i"/>
+                <constraint firstAttribute="bottom" secondItem="uny-Sv-Iga" secondAttribute="bottom" constant="-4" id="diz-M2-oed"/>
                 <constraint firstItem="uny-Sv-Iga" firstAttribute="leading" secondItem="F23-aT-3fR" secondAttribute="leading" id="hZ6-7V-JDi"/>
                 <constraint firstAttribute="trailing" secondItem="uny-Sv-Iga" secondAttribute="trailing" id="kJR-vU-MsY"/>
+                <constraint firstItem="uny-Sv-Iga" firstAttribute="top" secondItem="Q3E-tE-EEm" secondAttribute="bottom" constant="-4" id="qdP-3P-EUk"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <variation key="default">

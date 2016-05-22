@@ -17,6 +17,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         floatingLabel = NSBundle.mainBundle().loadNibNamed("FloatingLabel", owner: self, options: nil).last as! FloatingLabel
         floatingLabel.frame = CGRectMake(0, 30, self.view.bounds.size.width, 54)
         self.view.addSubview(floatingLabel)
+        floatingLabel.layer.borderColor = UIColor.lightGrayColor().CGColor
+        floatingLabel.layer.borderWidth = 1.0
         floatingLabel.floatingTextField.placeholder = "Description"
         floatingLabel.floatingTextField.delegate = self
     }
@@ -28,6 +30,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     //MARK: UITextFieldDelegate    
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        floatingLabel.placeHolderLabel.textColor = UIColor.blueColor()
         if range.location <= 0 && range.length == 1 {
             floatingLabel.placeHolderLabel.text = ""
         } else {
@@ -36,5 +39,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
         
     }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        floatingLabel.placeHolderLabel.textColor = UIColor.lightGrayColor()
+    }
  
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
