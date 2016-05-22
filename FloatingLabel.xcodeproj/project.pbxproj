@@ -14,6 +14,8 @@
 		51193A9C1CF09235008CC7FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51193A9A1CF09235008CC7FC /* LaunchScreen.storyboard */; };
 		51193AA71CF09235008CC7FC /* FloatingLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51193AA61CF09235008CC7FC /* FloatingLabelTests.swift */; };
 		51193AB21CF09235008CC7FC /* FloatingLabelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51193AB11CF09235008CC7FC /* FloatingLabelUITests.swift */; };
+		51193AC01CF092AB008CC7FC /* FloatingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51193ABF1CF092AB008CC7FC /* FloatingLabel.swift */; };
+		51193AC21CF092CF008CC7FC /* FloatingLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51193AC11CF092CF008CC7FC /* FloatingLabel.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		51193AAD1CF09235008CC7FC /* FloatingLabelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloatingLabelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51193AB11CF09235008CC7FC /* FloatingLabelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingLabelUITests.swift; sourceTree = "<group>"; };
 		51193AB31CF09235008CC7FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51193ABF1CF092AB008CC7FC /* FloatingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingLabel.swift; sourceTree = "<group>"; };
+		51193AC11CF092CF008CC7FC /* FloatingLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingLabel.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		51193A851CF09235008CC7FC = {
 			isa = PBXGroup;
 			children = (
+				51193ABF1CF092AB008CC7FC /* FloatingLabel.swift */,
+				51193AC11CF092CF008CC7FC /* FloatingLabel.xib */,
 				51193A901CF09235008CC7FC /* FloatingLabel */,
 				51193AA51CF09235008CC7FC /* FloatingLabelTests */,
 				51193AB01CF09235008CC7FC /* FloatingLabelUITests */,
@@ -231,6 +237,7 @@
 			files = (
 				51193A9C1CF09235008CC7FC /* LaunchScreen.storyboard in Resources */,
 				51193A991CF09235008CC7FC /* Assets.xcassets in Resources */,
+				51193AC21CF092CF008CC7FC /* FloatingLabel.xib in Resources */,
 				51193A971CF09235008CC7FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +265,7 @@
 			files = (
 				51193A941CF09235008CC7FC /* ViewController.swift in Sources */,
 				51193A921CF09235008CC7FC /* AppDelegate.swift in Sources */,
+				51193AC01CF092AB008CC7FC /* FloatingLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
